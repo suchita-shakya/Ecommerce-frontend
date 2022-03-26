@@ -24,10 +24,7 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     position: sticky;
 }
-#header a{
-    text-decoration: none;
-    color: black;
-}
+
 .navbar{
     display: flex;
 }
@@ -39,22 +36,26 @@
 .navbar li a{
     text-decoration: none;
     font-size: 16px;
+    color: black;
     
 }
+
 .navbar li a:hover,
 .navbar li a.active{
-    color:rgb(156, 201, 247);
+    color:rgb(106, 163, 219);
    
 }
+/*not working this line */
 .navbar li a.active::after,
 .navbar li a:hover::after{
     content: "";
     width: 30px;
     height: 2px;
-    background-color: rgb(156, 201, 247)e;
+    background-color: rgb(156, 201, 247);
     position: absolute;
     left: 20px;
     bottom: -4px;
+    
 }
 .mobile{
     display: none;
@@ -110,12 +111,16 @@ p{
 }
 #hero button{
     border: 0px;
-    padding: 2px 10px;
+    padding: 5px 10px;
     border-radius: 8px;
     background-color:rgb(243, 243, 177);
     color: rgb(106, 163, 219);
     font-size: 15px;
     cursor: pointer;
+}
+#hero button:hover{
+    background-color:rgb(106, 163, 219);
+    color: rgb(243, 243, 177);
 }
 /*global styling*/
 .section-padding{
@@ -198,13 +203,13 @@ a{
 
 #product1 .product{
     height: 60%;
-    width: 23%;
+    width: 280px;
     border: 1px solid rgb(226, 233, 248);
     border-radius: 5px;
     padding: 25px 5px;
     cursor: pointer;
     box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
-    margin: 18px 0;
+    margin: 18px 20px 18px 0;
     transition: 0.2s ease;
     position: relative;
     flex-wrap: wrap;
@@ -244,8 +249,8 @@ a{
     height: 40px;
     line-height: 40px;
     color:rgb(106, 163, 219) ;
-    background-color:rgb(243, 243, 177);
-    border: 1px solid rgb(245, 245, 144);
+    background-color:rgb(176, 205, 235);
+    border: 1px solid rgb(205, 221, 238);
     border-radius:30px ;
     position: absolute;
     bottom: 25px;
@@ -254,7 +259,7 @@ a{
 #product1 .product-container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 /*banner*/
@@ -320,7 +325,7 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 350px;
     background-image: url('images/banner/banner7.jpg');
     background-size: cover;
     height: 40vh;
@@ -372,6 +377,7 @@ a{
 #newsletter span{
     color: yellow;
 }
+
 #newsletter input{
     padding: 10px 20px;
     font-size: 16px;
@@ -429,8 +435,166 @@ footer .copyright{
     text-align: center;
 }
 
+/*Shop page*/
+#page-header{
+
+    background-image: url("images/shop-bg.jpg");
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#page-header p{
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    color: white;
+    background-color:rgb(106, 163, 219) ;
+    border: 2px solid rgb(59, 134, 209);
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-weight: 600;
+
+}
+/*Product Details*/
+#product-details{
+    display: flex;
+    
+}
+#product-details .product-image{
+    width: 40%;
+    
+    margin-right: 50px;
+    
+}
+#product-details .product-image #pimg{
+    width: 300px;
+}
+#product-details .image-grp{
+    display: flex;
+    justify-content: space-between;
+}
+#product-details .image-grp .small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+    
+}
+#product-details .pro-details{
+    padding-left: 30px;
+}
+#product-details .pro-details h2{
+    color: rgb(2, 86, 134);
+    font-size: 20px;
+    padding-top: 40px;
+}
+#product-details .pro-details h4{
+    font-size: 30px;
+    margin-top: 20px
+}
+#product-details .pro-details select{
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+#product-details .pro-details input{
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+#product-details .pro-details input:focus{
+    outline: none;
+}
+#product-details .pro-details button{
+    color: white;
+    background-color:rgb(106, 163, 219) ;
+}
+#product-details .pro-details button:hover{
+    background-color:rgb(2, 86, 134) ;
+}
+/*Blog page*/
+#blog-header{
+
+    background-image: url("images/blog-bg.jpg");
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#blog-header p{
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+}
+#blog{
+    padding: 150px 150px 0 150px;
+}
+#blog .blog-box{
+    display: flex;
+    margin-bottom: 30px;
+}
+#blog .blog-img{
+    width: 50%;
+    margin-right: 30px;
+}
+.blog-img img{
+    width: 100%;
+}
+#blog .blog-info a{
+    width: 50%;
+    font-size: 13px;
+    color: black;
+    font-weight: 700;
+}
+
+/*About Page*/
+#about-header{
+    background-image: url("images/about-bg.jpg");
+    background-size: cover;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#about-header h2, p{
+    color: black;
+}
+#about-info img{
+    width: 50%;
+}
+#about-info .about-desc{
+    padding-left: 30px;
+}
+
+#about-info{
+    display: flex;
+}
+
+#about-video .video{
+    
+}
+#about-video h1{
+    text-align: center;
+}
+
 /*media query starts*/
 @media(max-width:799px){
+    /*global css */
+    .section-padding {
+        padding: 40px 40px;
+    }
     .navbar{
         display: none;
         flex-direction: column;
@@ -446,7 +610,7 @@ footer .copyright{
         height: 100vh;
         
     }
-    .navbar.active{
+    .navbar.show{
        display: flex;
     }
     .navbar li{
@@ -462,14 +626,159 @@ footer .copyright{
         cursor: pointer;
     }
     #close{
+        display: initial;
         position: absolute;
         top: 30px;
         left: 30px;
         font-size: 24px;
         color:rgb(43, 35, 35) ;
     }
-}
 
+    #hero{
+        height: 70vh;
+        background-position: left 50% ;
+    }
+    #feature {
+   
+        justify-content: center;
+        
+    }
+    .feature-box {
+        margin: 15px 15px;
+    }
+    #product1 .product-container {
+        justify-content: center;  
+    }
+    #product1 .product {
+        margin: 15px 15px;  
+    }
+    #banner {
+        height: 20vh;
+    }
+    #sm-banner .banner-box {
+        width:100%;
+        height: 30vh;
+        margin-bottom: 35px;
+    }
+    #sm-banner .banner-box2 {
+        width: 100%;
+        height: 30vh;
+    }
+    #banner3 {
+        padding: 0 40px;
+    }
+    #banner3 .banner-box {
+        
+        width: 32%;
+        height: 30vh;
+    }
+    #banner3 .banner-box h2 {
+        font-size: 28px;
+        
+    }
+    #newsletter input {
+        width: 380px;
+    }
+    /*shop blog*/
+    #newsletter {
+        height: 40vh;
+    }
+    /*blog */
+    #blog {
+        padding: 50px 50px 0 50px;
+    }
+    #blog .blog-img {
+        width: 70%;
+    }
+    
+  
+}
+@media (max-width:477px){
+    #header {
+        padding: 10px 30px;   
+    }
+    #hero {
+        background-position:  1%;
+        padding: 0 30px;  
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .section-padding {
+        padding: 20px ;
+    }
+    .feature-box {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+    #product1 .product {
+        width: 100%;
+    }
+    #banner {
+        
+        height: 35vh;
+    }
+    #banner h2 {
+        text-align: center;
+    }
+    #sm-banner .banner-box {
+        height: 35vh;
+    }
+    #sm-banner .banner-box2 {
+        height: 35vh;
+    }
+    #banner3 {
+        display: flex;
+        flex-direction: column;
+    }
+    #banner3 .banner-box {
+        width: 100%;
+        height: 35vh;
+        margin-bottom: 20px;
+    }
+    #newsletter input {
+        width: 68%;
+    }
+    footer p {
+        text-align: start;
+        font-size: 12px;
+    }
+    #banner3 {
+        padding: 0 20px;
+    }
+
+    /*shop page*/
+    #page-header p {
+        text-align: center;
+    }
+    #product-details {
+        display: flex;
+        flex-direction: column;
+    }
+    #product-details .product-image {
+        width: 100%;
+    }
+    #newsletter {
+        height: 34vh;
+    }
+    /*blog*/
+    #blog .blog-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #blog .blog-img {
+        width: 320px;
+    }
+    #blog-header p {
+        text-align: center;
+    }
+
+
+}
 
 
 
