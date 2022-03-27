@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerce-cart</title>
+</head>
+<body>
+    <!--navbar-->
+    <section id="header">
+        <a href="#" id="logo">Zara</a>
+        <div>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href=""><i class="fa-solid fa-xmark" id="close"></i></a>
+            </ul>
+        </div>
+        <div class="mobile">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <i class="fa-solid fa-bars" id="bar"></i>
+            
+        </div>
+    </section>
+    <!--page header section-->
+    <section id="contact-header">
+        <h2>Happy Shoping</h2>
+        <p>Get free delivery for every product. Good Wishes!! :) </p>
+    </section>
+    <section id="cart"  class="section-padding">
+        <table>
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Rate</td>
+                    <td>Quantity</td>
+                    <td>Total Amount</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="fa-solid fa-xmark"></i></a></td>
+                    <td><img src="images/product/tshirt2.jpg" alt=""></td>
+                    <td>Fashion Shirt</td>
+                    <td>$50</td>
+                    <td><input type="number" name="quantity" id="quantity" value="1"></td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="fa-solid fa-xmark"></i></a></td>
+                    <td><img src="images/product/tshirt2.jpg" alt=""></td>
+                    <td>Fashion Shirt</td>
+                    <td>$50</td>
+                    <td><input type="number" name="quantity" id="quantity" value="1"></td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="fa-solid fa-xmark"></i></a></td>
+                    <td><img src="images/product/tshirt2.jpg" alt=""></td>
+                    <td>Fashion Shirt</td>
+                    <td>$50</td>
+                    <td><input type="number" name="quantity" id="quantity" value="1"></td>
+                    <td>$50</td>
+                </tr>
+                <tr>
+                    <td><a href=""><i class="fa-solid fa-xmark"></i></a></td>
+                    <td><img src="images/product/tshirt2.jpg" alt=""></td>
+                    <td>Fashion Shirt</td>
+                    <td>$50</td>
+                    <td><input type="number" name="quantity" id="quantity" value="1"></td>
+                    <td>$50</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+    <section id="cart-add" class="section-padding" >
+        <div class="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" name="coupon-id" placeholder="Enter your coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+        <div class="cart-total">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Total</td>
+                    <td>$789.90</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                    
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td>$789.90</td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to Checkout</button>
+        </div>
+    </section>
+    
+ 
+    <!--footer-->
+    <footer class="section-padding footer" >
+        <div class="col">
+            <a href="#" id="logo">Zara</a>
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Kamalpokhari, Kathmandu, Nepal</p>
+            <p><strong>Phone: </strong>908797689l</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href=""><p>About Us</p></a>
+            <a href=""><p>Delivery Information</p></a>
+            <a href=""><p>Privacy Policy</p></a>
+            <a href=""><p>Terms and Conditions</p></a>
+            <a href=""><p>Contact Us</p></a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href=""><p>Sign In</p></a>
+            <a href=""><p>View Cart</p></a>
+            <a href=""><p>My Wishlist</p></a>
+            <a href=""><p>Track My Order</p></a>
+            <a href=""><p>Help</p></a>
+        </div>
+        <div class="col">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="images/app.png" alt="">
+                    <img src="images/google.png" alt="">
+                </div> 
+                <p>Secured Payment Gateway</p>
+                <img src="images/paypal.png" alt="">           
+        </div>
+        <div class="copyright">
+            <p>@2022, Suchita Shakya- Ecommerce Template using HTML,CSS ,js</p>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/162089acf6.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
